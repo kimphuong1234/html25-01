@@ -1,0 +1,204 @@
+﻿
+.m-dialog .dialog-model{
+    /*display:none;*/
+}
+    /*Nền xám bên dưới*/
+    .m-dialog .dialog-model {
+        position: fixed;
+        opacity: .4;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 999;
+    }
+
+    .m-dialog .dialog-content {
+        padding: 24px;
+        position: absolute;
+        width: 700px;
+        height: 740px;
+        background-color: #ffffff;
+        z-index: 1000;
+        top: calc(50% - 350px);
+        left: calc(50% - 400px);
+        border-radius: 5px;
+        /*background-color: #ff0000;*/
+    }
+
+    .m-dialog .dialog-header {
+        display: flex;
+    }
+
+        .m-dialog .dialog-header .dialog-header-close {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+            .m-dialog .dialog-header .dialog-header-close:hover {
+                border-radius: 5px;
+            }
+
+            .m-dialog .dialog-header .dialog-header-close button {
+                width: 40px;
+                height: 40px;
+                border-radius: 0 5px 0 0;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-image: url('/content/icon/x.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                opacity: .7;
+            }
+
+                .m-dialog .dialog-header .dialog-header-close button:hover {
+                    background-color: #ccc;
+                }
+
+        /*Tiêu đề của dialog*/
+        .m-dialog .dialog-header .dialog-header-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .m-dialog .word {
+            padding-left:10px;
+            font-size: 11.5px;
+            text-transform: uppercase;
+        }
+
+    .m-dialog .dialog-content .mainbody {
+        height: 675px;
+        /*background-color: #019160;*/
+    }
+    .mainbody .m-control{
+        tab-size:35;
+    }
+        /*cột 1*/
+        .m-dialog .dialog-content .mainbody .Colum-1 {
+            height: 630px;
+            float: left;
+            /*display: flex;*/
+            width: 170px;
+            padding-top: 15px;
+            /*background-color: aqua;*/
+        }
+
+            .Colum-1 .image {
+                width: 155px;
+                height: 155px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: 0.1px solid #808080;
+                border-radius: 50%;
+                margin-left: 2px;
+                align-content: center;
+            }
+
+            .img {
+                background-image: url('/content/image/default-avatar.jpg');
+            }
+
+            .Colum-1 .text{
+                text-align:center;
+            }
+
+
+        /*cột 2*/
+        .a-row {
+            margin-top: 16px;
+            float: left;
+            margin-left:10px;
+        }
+        .a-row .red{
+            color:red;
+        }
+        .m-dialog .dialog-content .mainbody .Colum2 {
+            float: left;
+            width:500px;
+            height:630px;
+        }
+
+        .Colum2 .infor{
+            width: 530px;
+            height: 400px;
+            /*background-color: #ff6a00;*/
+        }
+        
+        .Colum2 .work{
+            padding-top:10px;
+            width: 530px;
+            height:230px;
+            /*background-color:#b6ff00;*/
+        }
+
+        .Colum2 .Colum2-row{
+            float:left;
+        }
+.Colum2 .date {
+    width: 232px;
+    height: 20px;
+}
+.Colum2 .option {
+    border-radius: 5px;
+    width: 255px;
+    height: 43px;
+}
+
+/*footer*/
+.m-dialog .dialog-footer {
+    width: 748px;
+    margin-top: 9px;
+    border-radius: 5px;
+    margin-left: -24px;
+    height: 60px;
+    background-color: #E5E5E5;
+    background-position: center;
+}
+
+    .m-dialog .dialog-footer .dialog-footer-detail {
+        height: 40px;
+        padding-top: 10px;
+        padding-right: 21px;
+    }
+
+    .m-dialog .dialog-footer .save {
+        float: right;
+        display: flex;
+        align-items: center;
+        background-color: #019160;
+        border-radius: 4px;
+        height: 40px;
+        font-size: 13px;
+        color: #ffffff;
+        font-family: GoogleSans-Regular;
+        padding-left: 24px;
+        padding-right: 24px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+        .m-dialog .dialog-footer .save .save-icon {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+    .m-dialog .dialog-footer .cancel {
+        float: right;
+        margin-top: 13px;
+        margin-right: 32px;
+        cursor: pointer;
+        font-family: GoogleSans-Regular;
+        font-size: 13px;
+    }
+
+.icon {
+    background-image: url('/content/icon/document-online.png');
+}
